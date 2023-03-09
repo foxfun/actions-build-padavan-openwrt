@@ -1,7 +1,3 @@
-# # # # # # # # # # #
-#  自动构建 NEWIFI3
-#     花妆男
-# # # # # # # # # # #
 name: Padavan CI MI-MINI
 on:
    schedule:                           # 时间表
@@ -21,7 +17,7 @@ env:
   ACTIONS_ALLOW_UNSECURE_COMMANDS: true
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     if: github.event.repository.owner.id == github.event.sender.id # 自己点的 start
     steps:
       - name: Checkout Master # 1.导入主分支
